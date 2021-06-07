@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일로그인</title>
+    <style>
+        @font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ * {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color:#333;
+    display:block;
+}
+.mobile_login {
+    width: 375px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+fieldset {border:0;}
+legend {
+    position:absolute;
+    left:-99999px;
+}
+p {
+    text-align:center;
+    border-bottom:1px solid #000;
+    font-size:30px;
+    padding:15px;
+    margin-top:10px;
+    font-family: 'Cafe24Oneprettynight';
+}
+button{
+    border-radius:15px;
+    border-color:#EC7B7B;
+    background-color:white;
+    font-family: 'Cafe24Oneprettynight';
+}
+form {
+    width: 375px;
+    margin: 20px auto;
+}
+
+form fieldset> div > label {
+    width: 327px;
+    text-align:left;
+    /* background-color:salmon; */
+    margin-top:21px;
+    font-size:25px;
+    display: block;
+    margin-left: 10px;
+    font-family: 'Cafe24Oneprettynight';
+}
+
+input[type="id"],
+input[type="pw"],
+input[type="pw01"],
+input[type="name"],
+input[type="phonenumber"],
+input[type="number"],
+input[type="bt"],
+input[type="text"]{
+    display:inline-block;
+    width:327px;
+    padding:10px;
+    margin-left:10px;
+    margin-bottom:0px;
+    border:0;
+    border-bottom:1px solid #707070;
+    font-family: 'Cafe24Oneprettynight';
+    outline:#fff;
+    color:#A29999;
+    
+    
+}
+#id {
+    width:242px;
+}
+.check span{
+    margin-right:21px;
+    font-family: 'Cafe24Oneprettynight';
+    
+}
+.check {
+    padding:10px;
+}
+.button input[type="submit"] {
+    width:327px;
+    border-radius:75px;
+    background-color:#EC7B7B;
+    padding:10px;
+    color:#fff;
+    font-size:17px;  
+    margin-top: 56px;
+    text-align:center;
+    
+}
+
+.all span{
+    float:left;
+    width:327px;
+    padding:10px;
+    font-family: 'Cafe24Oneprettynight';
+    
+}
+.all h2 {
+    float:right;
+    display:block;
+    margin-bottom:0px;
+    font-family: 'Cafe24Oneprettynight';
+    font-size:17px;
+    margin-right: 10px; 
+    
+    
+}
+#content {
+    display:inline-block;
+    margin:-10px;
+    text-align:center;
+    
+    
+}
+    </style>
+</head>
+<body>
+   <div class="mobile_login">
+    <form action="" mathod="post">
+        <fieldset>
+            <legend>회원가입페이지</legend>
+            <p>회원가입</p>
+            <div>
+                <label>아이디(이메일)</label>
+                <input type="text" id="id"  placeholder="이메일주소"><button>중복확인</button>
+            </div>
+            <div>
+                <label for="pw">비밀번호</label>
+                <input type="pw" id="password" placeholder="비밀번호">
+            </div>
+            <div>
+                <label for="pw01">비밀번호확인</label>
+                <input type="pw01" id="password01" placeholder="비밀번호확인">
+            </div>
+            <div>
+                <label for="name">이름</label>
+                <input type="name" id="name" placeholder="이름">
+            </div>
+            <div>
+                <label for="phonenumber">휴대폰번호</label>
+                <input type="phonenumber" id="cell phonenumber" placeholder="'-'구분없이 입력">
+            </div>
+            <div>
+               <label for="number">인증번호</label> 
+               <input type="number" id="number" placeholder="인증번호 입력">
+            </div>
+            <div>
+                <label for="bt">생년월일</label>
+                <input type="bt" id="birthday" placeholder="8자리 입력">
+            </div>
+            <div class="check">
+                <label>성별</label>
+                <input type="radio" name="genter" value="man"><span>여성</span> 
+                <input type="radio" name="genter" value="woman"><span>남성</span>
+            </div>
+            <div class="all">
+                <input type="radio" id="content01"  value="example01" >
+                <span>모두 동의합니다.</span>
+                <input type="radio" id="content"  value="example02">
+                <span>이용약관 동의</span>
+                <h2>보기</h2>
+                <input type="radio" id="content"  value="example03">
+                <span>개인정보 취급방침 동의</span>
+                <h2>보기</h2>
+                <input type="radio" id="content" valuee="example04">
+                <span>마케팅 정보수신 동의</span>
+                <h2>보기</h2>
+               
+            </div>
+            <div class="button">
+                <input type="submit" value="가입하기">
+            </div>
+        </fieldset>
+    </form>
+   </div>
+</body>
+</html>
